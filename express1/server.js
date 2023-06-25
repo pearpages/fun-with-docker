@@ -5,7 +5,7 @@ const app = express();
 
 app.get("/hello-world", (req, res) => {
   axios
-    .get("http://third-container:3000/user")
+    .get("http://localhost:3000/user")
     .then((response) => {
       res.send("Hello, " + response.data.name);
     })
