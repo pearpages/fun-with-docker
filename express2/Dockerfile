@@ -10,4 +10,7 @@ COPY server.js .
 # Install dependencies
 RUN npm install
 
-CMD ["node", "server.js"]
+# Expose port 3000
+EXPOSE 3000
+
+CMD ["npm", "start"]

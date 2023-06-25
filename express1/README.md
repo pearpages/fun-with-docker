@@ -1,0 +1,1 @@
+exposes endpoint `GET` `/hello-world` in port `3000`.

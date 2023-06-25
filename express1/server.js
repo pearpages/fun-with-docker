@@ -5,7 +5,7 @@ const app = express();
 
 app.get("/hello-world", (req, res) => {
   axios
-    .get("http://third-container/user")
+    .get("http://third-container:3000/user")
     .then((response) => {
       res.send("Hello, " + response.data.name);
     })
@@ -15,6 +15,6 @@ app.get("/hello-world", (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-  console.log("Second Container listening on port 3000");
+app.listen(3001, () => {
+  console.log("Second Container listening on port 3001");
 });
